@@ -2,7 +2,7 @@
 
 **Capture a passage, notice source drift, and explicitly revalidate an exact quotation.**
 
-[Live interactive showcase](https://az9713.github.io/rea-obsidian-evidence/) · [Download plugin and synthetic demo vault](https://github.com/az9713/rea-obsidian-evidence/releases/latest)
+[Live interactive showcase](https://az9713.github.io/rea-obsidian-evidence/) · [Download plugin and synthetic demo vault](https://github.com/az9713/rea-obsidian-evidence/releases/tag/v0.1.0)
 
 ![Interactive core demo, not an Obsidian screenshot](https://az9713.github.io/rea-obsidian-evidence/demo-desktop.png)
 
