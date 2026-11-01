@@ -1,10 +1,20 @@
 # Evidence Anchor for Obsidian
 
-**Capture a passage, notice source drift, and explicitly revalidate an exact quotation.**
+Save a passage from a source note and keep a record of the text it came from. If that source changes later, the plugin marks the saved evidence for review instead of silently treating it as unchanged.
 
-[Live interactive showcase](https://az9713.github.io/rea-obsidian-evidence/) · [Download plugin and synthetic demo vault](https://github.com/az9713/rea-obsidian-evidence/releases/tag/v0.1.0)
+You quote a sentence in your research notes, then revise or rename the source note weeks later. A working link does not tell you whether the source still says what you quoted. That is the small but important gap this plugin tries to make visible.
+
+**Example:** Capture a passage, then edit its source. Its status becomes 'Stale', even if your edit was elsewhere in the source. You must review and explicitly revalidate it. If two copies could be the source, the plugin asks you to choose rather than guessing.
+
+**What you install:** An Obsidian community plugin for Markdown and plain-text notes.
+
+**Current scope:** Only Markdown and plain-text sources are supported; PDFs, scans and web pages are outside this release. A matching passage means the saved text matches, not that its claim is true. It still needs a test inside the real Obsidian app.
+
+[Live guide](https://az9713.github.io/rea-obsidian-evidence/) · [Download packages](https://github.com/az9713/rea-obsidian-evidence/releases/tag/v0.1.0)
 
 ![Interactive core demo, not an Obsidian screenshot](https://az9713.github.io/rea-obsidian-evidence/demo-desktop.png)
+
+
 
 ## Feature showcase
 
