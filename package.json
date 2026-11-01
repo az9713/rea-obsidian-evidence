@@ -1,0 +1,22 @@
+{
+  "name": "obsidian-evidence-anchor",
+  "version": "0.1.0",
+  "description": "Conservative quote provenance and stale-source checks for Obsidian Markdown and text notes.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.mjs && tsc --noEmit",
+    "test": "node scripts/test.mjs",
+    "test:browser": "node scripts/browser-test.mjs",
+    "release": "npm run build && npm test && node scripts/demo.mjs && node scripts/release.mjs",
+    "demo": "npm run build && node scripts/demo.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.15",
+    "esbuild": "0.28.2",
+    "linkedom": "0.18.12",
+    "obsidian": "1.14.4",
+    "playwright": "1.58.2",
+    "typescript": "7.0.2"
+  }
+}

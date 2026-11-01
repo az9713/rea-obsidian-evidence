@@ -1,0 +1,10 @@
+{
+  "accessDate": "2026-10-31 (America/Los_Angeles)",
+  "implementationAuthority": "Independently implemented documented public-API extension; not REA-recovered Obsidian internals.",
+  "sources": [
+    { "title": "Official Obsidian API source", "commit": "9abd9605ce081383674aae1ed111c456edde0688", "url": "https://github.com/obsidianmd/obsidian-api/tree/9abd9605ce081383674aae1ed111c456edde0688", "license": "MIT", "role": "Plugin lifecycle, editor, vault events, views, persistence and protocol handler API declarations. npm development types pinned1.14.4." },
+    { "title": "Official sample plugin", "commit": "07ceb81d1fb3384af611ebf665a1ec42a7e5926d", "url": "https://github.com/obsidianmd/obsidian-sample-plugin/tree/07ceb81d1fb3384af611ebf665a1ec42a7e5926d", "license": "0BSD", "role": "Reference for ordinary community-plugin packaging and host-external bundling." },
+    { "title": "Native Obsidian links", "url": "https://help.obsidian.md/links", "role": "Baseline: note/heading/block navigation differs from source-content fingerprinting and stale-evidence checks." },
+    { "title": "PDF++ official documentation", "url": "https://ryotaushio.github.io/obsidian-pdf-plus/", "role": "Existing PDF annotation/viewing/editing baseline. This release intentionally rejects PDF anchors." }
+  ]
+}

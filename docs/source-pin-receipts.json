@@ -1,0 +1,16 @@
+{
+  "sources": [
+    {
+      "sha256": "97c86417c893db691e401fdffd9026e348dc96da6bfcfa5d49a301d7fe7542a0",
+      "title": "Obsidian public API declarations",
+      "url": "https://raw.githubusercontent.com/obsidianmd/obsidian-api/9abd9605ce081383674aae1ed111c456edde0688/obsidian.d.ts"
+    },
+    {
+      "sha256": "0d03217199cbf9341ad08ffeeaa61d9af5c4fed4e773b2262e84a273d52e9f19",
+      "title": "Official sample plugin source",
+      "url": "https://raw.githubusercontent.com/obsidianmd/obsidian-sample-plugin/07ceb81d1fb3384af611ebf665a1ec42a7e5926d/src/main.ts"
+    }
+  ],
+  "accessedAt": "2026-11-01T04:38:13.7610793Z",
+  "note": "Public source reference receipts only; no copied application binary or private vault."
+}

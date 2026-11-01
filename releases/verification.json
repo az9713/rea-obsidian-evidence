@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-11-01T04:37:19.751Z",
+  "version": "0.1.0",
+  "command": "npm run build && npm test",
+  "tests": 31,
+  "passed": 31,
+  "failed": 0,
+  "exitCode": 0,
+  "pluginSha256": "9f10c938b0f7b675ccd05e26450e44b896c2629cf57343677b76603c64ff8831",
+  "coreTests": "tests/core.test.mjs",
+  "pluginApiMockTests": "tests/plugin.test.mjs",
+  "integrationAuthority": "Obsidian public-API mocks + linkedom; not a real Obsidian host",
+  "realObsidianHost": {
+    "verified": false,
+    "reason": "No installed application/private vault accessed. A portable vendor host was not launched because writes outside the allowed workspace could not be independently ruled out."
+  },
+  "limitations": [
+    "Markdown and plain text only; PDF unsupported.",
+    "A hash identifies unchanged decoded text, not scientific truth or author authenticity.",
+    "No file-system atomic snapshot or cross-device synchronization correctness claim.",
+    "Declared minimum Obsidian version is not real-host validated."
+  ]
+}

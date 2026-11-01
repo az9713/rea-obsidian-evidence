@@ -1,0 +1,9 @@
+{
+  "id": "evidence-anchor",
+  "name": "Evidence Anchor",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Capture text evidence, detect source drift and explicitly revalidate exact, unambiguous quotations.",
+  "author": "Evidence Anchor contributors",
+  "isDesktopOnly": true
+}

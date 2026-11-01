@@ -1,0 +1,196 @@
+TAP version 13
+# Subtest: SHA-256 uses exact UTF-8 text, including Unicode and CRLF
+ok 1 - SHA-256 uses exact UTF-8 text, including Unicode and CRLF
+  ---
+  duration_ms: 7.8891
+  type: 'test'
+  ...
+# Subtest: capture rejects PDF, traversal paths, empty/whitespace and stale selection
+ok 2 - capture rejects PDF, traversal paths, empty/whitespace and stale selection
+  ---
+  duration_ms: 2.3976
+  type: 'test'
+  ...
+# Subtest: unchanged source and selected quote are verified
+ok 3 - unchanged source and selected quote are verified
+  ---
+  duration_ms: 1.0888
+  type: 'test'
+  ...
+# Subtest: unrelated source change stays stale until an explicit exact-context revalidation
+ok 4 - unrelated source change stays stale until an explicit exact-context revalidation
+  ---
+  duration_ms: 1.8051
+  type: 'test'
+  ...
+# Subtest: a quote edit is stale and cannot be revalidated
+ok 5 - a quote edit is stale and cannot be revalidated
+  ---
+  duration_ms: 1.8137
+  type: 'test'
+  ...
+# Subtest: a context-only edit requires recapture, even if quote is unique
+ok 6 - a context-only edit requires recapture, even if quote is unique
+  ---
+  duration_ms: 0.646
+  type: 'test'
+  ...
+# Subtest: duplicate exact quote/context in changed source is ambiguous
+ok 7 - duplicate exact quote/context in changed source is ambiguous
+  ---
+  duration_ms: 0.5392
+  type: 'test'
+  ...
+# Subtest: capture offset and context disambiguate repeated quotations
+ok 8 - capture offset and context disambiguate repeated quotations
+  ---
+  duration_ms: 0.6558
+  type: 'test'
+  ...
+# Subtest: known file and folder rename preserve IDs and content validation
+ok 9 - known file and folder rename preserve IDs and content validation
+  ---
+  duration_ms: 0.8615
+  type: 'test'
+  ...
+# Subtest: missing old path plus one identical file requires explicit relocation confirmation
+ok 10 - missing old path plus one identical file requires explicit relocation confirmation
+  ---
+  duration_ms: 1.1648
+  type: 'test'
+  ...
+# Subtest: deleted original with duplicate copies remains ambiguous; explicit rebind is audited
+ok 11 - deleted original with duplicate copies remains ambiguous; explicit rebind is audited
+  ---
+  duration_ms: 1.7893
+  type: 'test'
+  ...
+# Subtest: known tracked path wins over duplicate copies; no filename-only identity matching
+ok 12 - known tracked path wins over duplicate copies; no filename-only identity matching
+  ---
+  duration_ms: 0.8206
+  type: 'test'
+  ...
+# Subtest: partial scan and failed tracked read withhold identity resolution
+ok 13 - partial scan and failed tracked read withhold identity resolution
+  ---
+  duration_ms: 0.6351
+  type: 'test'
+  ...
+# Subtest: whitespace and Unicode normalization never silently repair quotation changes
+ok 14 - whitespace and Unicode normalization never silently repair quotation changes
+  ---
+  duration_ms: 0.9222
+  type: 'test'
+  ...
+# Subtest: revalidation refuses a fresh hash different from the reviewed assessment
+ok 15 - revalidation refuses a fresh hash different from the reviewed assessment
+  ---
+  duration_ms: 0.9607
+  type: 'test'
+  ...
+# Subtest: tampered snapshot and stored quote hashes fail closed
+ok 16 - tampered snapshot and stored quote hashes fail closed
+  ---
+  duration_ms: 2.2775
+  type: 'test'
+  ...
+# Subtest: store validation rejects unknown schema, duplicate IDs, unsafe paths and malformed ledgers
+ok 17 - store validation rejects unknown schema, duplicate IDs, unsafe paths and malformed ledgers
+  ---
+  duration_ms: 1.1015
+  type: 'test'
+  ...
+# Subtest: source renamed to unsupported format remains readable metadata but unavailable
+ok 18 - source renamed to unsupported format remains readable metadata but unavailable
+  ---
+  duration_ms: 0.6686
+  type: 'test'
+  ...
+# Subtest: manual reassociation also refuses ambiguous or changed-context sources
+ok 19 - manual reassociation also refuses ambiguous or changed-context sources
+  ---
+  duration_ms: 0.5796
+  type: 'test'
+  ...
+# Subtest: unpaired Unicode surrogates are rejected instead of producing replacement-byte collisions
+ok 20 - unpaired Unicode surrogates are rejected instead of producing replacement-byte collisions
+  ---
+  duration_ms: 0.3528
+  type: 'test'
+  ...
+# Subtest: bounded revision history retains the original capture plus recent revisions
+ok 21 - bounded revision history retains the original capture plus recent revisions
+  ---
+  duration_ms: 22.4165
+  type: 'test'
+  ...
+# Subtest: compiled plugin registers commands and renders an in-app panel through public API mocks
+ok 22 - compiled plugin registers commands and renders an in-app panel through public API mocks
+  ---
+  duration_ms: 15.841
+  type: 'test'
+  ...
+# Subtest: unsaved editor and PDF capture refuse without modifying notes or store
+ok 23 - unsaved editor and PDF capture refuse without modifying notes or store
+  ---
+  duration_ms: 2.7566
+  type: 'test'
+  ...
+# Subtest: rename event preserves anchor identity; source modification never silently revalidates
+ok 24 - rename event preserves anchor identity; source modification never silently revalidates
+  ---
+  duration_ms: 7.7238
+  type: 'test'
+  ...
+# Subtest: fresh read prevents revalidation against a source changed after the displayed check
+ok 25 - fresh read prevents revalidation against a source changed after the displayed check
+  ---
+  duration_ms: 4.1939
+  type: 'test'
+  ...
+# Subtest: bad persisted data locks writes instead of silently discarding the original
+ok 26 - bad persisted data locks writes instead of silently discarding the original
+  ---
+  duration_ms: 3.3754
+  type: 'test'
+  ...
+# Subtest: delete with identical copies gives ambiguous state and disabled revalidation button
+ok 27 - delete with identical copies gives ambiguous state and disabled revalidation button
+  ---
+  duration_ms: 15.3169
+  type: 'test'
+  ...
+# Subtest: quotes are rendered as text, never interpreted as HTML
+ok 28 - quotes are rendered as text, never interpreted as HTML
+  ---
+  duration_ms: 3.1483
+  type: 'test'
+  ...
+# Subtest: oversized/unreadable source yields unavailable with explicit partial scan, not missing
+ok 29 - oversized/unreadable source yields unavailable with explicit partial scan, not missing
+  ---
+  duration_ms: 3.1678
+  type: 'test'
+  ...
+# Subtest: source reassociation requires modal confirmation, records the choice and never edits source notes
+ok 30 - source reassociation requires modal confirmation, records the choice and never edits source notes
+  ---
+  duration_ms: 4.884
+  type: 'test'
+  ...
+# Subtest: explicit source choice enforces file-size bounds even outside a scan
+ok 31 - explicit source choice enforces file-size bounds even outside a scan
+  ---
+  duration_ms: 4.7644
+  type: 'test'
+  ...
+1..31
+# tests 31
+# suites 0
+# pass 31
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2411.7985

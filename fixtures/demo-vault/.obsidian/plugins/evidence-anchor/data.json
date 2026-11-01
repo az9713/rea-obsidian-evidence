@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "anchors": [
+    {
+      "id": "e9a175f5-02fd-4eb0-947f-4e2a115f52a9",
+      "sourceId": "3b043e60-a77f-4eb8-8657-f448964b49bb",
+      "sourcePath": "Sources/Experiment.md",
+      "sourceHash": "497ef3c4042db6a32a20a5d57bd0e6f9a296902af8c2402577354092a62719c1",
+      "quote": "The measured value is 42 ± 2 units.",
+      "quoteHash": "1c15ef7f749dba799a3dc8f1c58a6138cf903260ec57aaedb4686419385db8bc",
+      "prefix": "d context distinguishes this quotation from a copied sentence. \n",
+      "suffix": "\nThe apparatus and calibration are documented in this synthetic ",
+      "start": 241,
+      "capturedAt": "2026-11-01T04:37:20.532Z",
+      "validatedAt": "2026-11-01T04:37:20.532Z",
+      "revisions": [
+        {
+          "at": "2026-11-01T04:37:20.532Z",
+          "path": "Sources/Experiment.md",
+          "hash": "497ef3c4042db6a32a20a5d57bd0e6f9a296902af8c2402577354092a62719c1",
+          "action": "capture"
+        }
+      ]
+    }
+  ]
+}

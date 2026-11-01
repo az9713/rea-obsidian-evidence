@@ -1,0 +1,10 @@
+node_modules/
+.test-build/
+fixtures/host-user/
+fixtures/host-cache/
+fixtures/demo-vault/.obsidian/workspace*.json
+investigation/*.private.json
+audit-baseline.private.json
+privateinventory*
+*.log
+coverage/

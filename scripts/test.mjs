@@ -1,0 +1,12 @@
+import { build } from 'esbuild';
+import { mkdir, writeFile, readFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { spawnSync } from 'node:child_process';
+await mkdir('.test-build', { recursive: true });
+await build({ entryPoints: ['src/core.ts'], outfile: '.test-build/core.mjs', bundle: true, platform: 'node', format: 'esm', target: 'es2022' });
+const result = spawnSync(process.execPath, ['--test', 'tests/core.test.mjs', 'tests/plugin.test.mjs'], { encoding: 'utf8' });
+process.stdout.write(result.stdout ?? ''); process.stderr.write(result.stderr ?? '');
+await writeFile('tests/test-results.tap', result.stdout ?? '');
+const number = key => Number(result.stdout?.match(new RegExp(`^# ${key} (\\d+)$`, 'm'))?.[1] ?? 0);
+await writeFile('docs/verification.json', JSON.stringify({ generatedAt: new Date().toISOString(), version: '0.1.0', command: 'npm run build && npm test', tests: number('tests'), passed: number('pass'), failed: number('fail'), exitCode: result.status, pluginSha256: createHash('sha256').update(await readFile('main.js')).digest('hex'), coreTests: 'tests/core.test.mjs', pluginApiMockTests: 'tests/plugin.test.mjs', integrationAuthority: 'Obsidian public-API mocks + linkedom; not a real Obsidian host', realObsidianHost: { verified: false, reason: 'No installed application/private vault accessed. A portable vendor host was not launched because writes outside the allowed workspace could not be independently ruled out.' }, limitations: ['Markdown and plain text only; PDF unsupported.', 'A hash identifies unchanged decoded text, not scientific truth or author authenticity.', 'No file-system atomic snapshot or cross-device synchronization correctness claim.', 'Declared minimum Obsidian version is not real-host validated.'] }, null, 2));
+process.exitCode = result.status ?? 1;

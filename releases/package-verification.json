@@ -1,0 +1,22 @@
+{
+  "command": "python scripts/verify_release.py",
+  "results": [
+    {
+      "artifact": "evidence-anchor-0.1.0.zip",
+      "sha256": "27a3635492fffbe6bf0f44ec1cb6bb8981de3d967cc37cca4f47761f98a62874",
+      "entries": 9,
+      "crc": "pass",
+      "paths": "safe",
+      "packagedPluginMatchesBuild": true
+    },
+    {
+      "artifact": "evidence-anchor-demo-vault-0.1.0.zip",
+      "sha256": "b2d061ac5e44e7e865f5e503577d37982a18e2beb65499fbd98cbb3bc5f2045f",
+      "entries": 8,
+      "crc": "pass",
+      "paths": "safe",
+      "packagedPluginMatchesBuild": true
+    }
+  ],
+  "scope": "Independent ZIP CRC, path safety, SHA-256, manifest and bundled-plugin equality; not an Obsidian host test."
+}

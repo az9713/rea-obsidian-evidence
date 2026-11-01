@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-11-01T04:34:21.083Z",
+  "authority": "Real Chromium browser demo; not Obsidian host",
+  "browser": "156.0.8078.4",
+  "passed": [
+    "Browser core demo initializes with verified exact evidence",
+    "Tracked rename preserves identity and verification",
+    "Source drift requires explicit revalidation",
+    "Changed quote cannot be silently revalidated",
+    "Duplicate missing-path source candidates are ambiguous",
+    "No sources produces missing state",
+    "390px mobile layout has no horizontal page overflow",
+    "No browser JavaScript errors"
+  ],
+  "errors": [],
+  "desktopScreenshot": "demo-desktop.png",
+  "mobileScreenshot": "demo-mobile.png"
+}

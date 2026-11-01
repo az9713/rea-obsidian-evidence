@@ -1,0 +1,16 @@
+.evidence-panel { padding: 14px; }
+.evidence-panel h2 { margin-top: 0; }
+.evidence-panel .evidence-muted { color: var(--text-muted); font-size: var(--font-smallest); }
+.evidence-panel .evidence-error { color: var(--text-error); }
+.evidence-actions { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+.evidence-actions button { height: auto; min-height: 28px; white-space: normal; }
+.evidence-card { border: 1px solid var(--background-modifier-border); border-radius: 8px; padding: 12px; margin-top: 12px; }
+.evidence-card h3 { margin: 10px 0; font-size: var(--font-ui-medium); overflow-wrap: anywhere; }
+.evidence-card blockquote { margin: 10px 0; padding-left: 10px; border-left: 3px solid var(--interactive-accent); white-space: pre-wrap; overflow-wrap: anywhere; }
+.evidence-card pre { font-size: 11px; overflow-wrap: anywhere; white-space: pre-wrap; user-select: text; }
+.evidence-badge { border: 1px solid currentColor; border-radius: 4px; padding: 2px 6px; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+.evidence-badge.is-verified { color: var(--text-success); }
+.evidence-badge.is-stale, .evidence-badge.is-ambiguous { color: var(--text-warning); }
+.evidence-badge.is-missing { color: var(--text-error); }
+.evidence-badge.is-unavailable { color: var(--text-muted); }
+.evidence-status { cursor: pointer; }
