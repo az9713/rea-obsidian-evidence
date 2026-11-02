@@ -12,6 +12,18 @@ You quote a sentence in your research notes, then revise or rename the source no
 
 [Live guide](https://az9713.github.io/rea-obsidian-evidence/) · [Download packages](https://github.com/az9713/rea-obsidian-evidence/releases/tag/v0.1.0)
 
+<!-- rea-release-expectations:start -->
+## What to expect from this release
+
+**Status: experimental.** Read the tested scope and remaining work below before choosing this release for your workflow.
+
+- **What you get:** A community plugin intended to run inside Obsidian. The browser demonstration runs the checking logic separately and is not an Obsidian session.
+- **Verified so far:** Passage capture, stale-source detection, source selection and explicit revalidation were tested with a simulated Obsidian interface and browser examples.
+- **Still needs testing or implementation:** Installation and the full capture/edit/rename/revalidation workflow still need testing inside the real Obsidian app.
+- **Relationship to the original app:** This supports Markdown and plain-text sources. PDFs, scans and web pages are outside the release. A matching quotation shows text agreement, not that the quoted claim is true.
+
+<!-- rea-release-expectations:end -->
+
 ![Interactive core demo, not an Obsidian screenshot](https://az9713.github.io/rea-obsidian-evidence/demo-desktop.png)
 
 
